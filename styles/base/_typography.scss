@@ -5,3 +5,12 @@ body {
   line-height: 1.7;
   color: $color-black-900;
 }
+
+.heading-one {
+  font-size: 4rem;
+  max-width: 30ch;
+
+  span {
+    color: $color-blue-300;
+  }
+}

@@ -4,13 +4,14 @@ export default function Home() {
       <article className="article-home">
         <section>
           <h1 className="heading-one">
-            SMARTER WAY TO FILE TAX RETURN IN PERSON. BY PHONE. ONLINE
+            SMARTER WAY TO FILE TAX RETURN{" "}
+            <span>IN PERSON. BY PHONE. ONLINE</span>
           </h1>
           <p className="paragraph">
             We help lodging tax return Sydney from anywhere. Get your biggest
             tax refund with no tax knowledge needed.
           </p>
-          <button>Book Appointment</button>
+          <button className="btn">Book Appointment</button>
         </section>
       </article>
 
