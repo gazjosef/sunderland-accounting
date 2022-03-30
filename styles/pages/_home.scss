@@ -20,6 +20,9 @@
   width: 100%;
 
   color: $color-white;
+
+  display: grid;
+  place-content: center;
 }
 
 .article-services {

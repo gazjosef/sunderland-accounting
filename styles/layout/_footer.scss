@@ -1,14 +1,29 @@
 .footer {
+  background-color: $color-black-900;
   color: $color-white;
 
   &__info {
-    background-color: $color-black-900;
-    height: 15rem;
+    padding: 5rem 10rem;
+    height: 30rem;
     width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  &__links {
+    background-color: slateblue;
+    grid-column: 1 / span 1;
+  }
+
+  &__icons {
+    background-color: skyblue;
+    grid-column: 2 / span 1;
   }
 
   &__copyright {
     background-color: $color-black;
+    height: 5rem;
     width: 100%;
 
     display: flex;
