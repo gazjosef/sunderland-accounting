@@ -1,3 +1,11 @@
+import { IconContext } from "react-icons";
+import {
+  FaAngleUp,
+  FaPencilAlt,
+  FaBriefcase,
+  FaPaperclip,
+} from "react-icons/fa";
+
 export default function Home() {
   return (
     <>
@@ -16,11 +24,80 @@ export default function Home() {
       </article>
 
       <article className="article-services">
-        <section className="article-services__intro"></section>
-        <section className="article-services__taxes"></section>
-        <section className="article-services__finances"></section>
-        <section className="article-services__bookkeeping"></section>
-        <section className="article-services__payroll"></section>
+        <section className="article-services__intro">
+          <h2 className="heading-two">
+            PROVIDING YOU COMPREHENSIVE TAX, ACCOUNTING AND PAYROLL SERVICES.
+          </h2>
+          <p className="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis exercitationem dignissimos sed a tempora saepe optio
+            esse aut sequi earum.
+          </p>
+        </section>
+        <section className="article-services__taxes">
+          <IconContext.Provider
+            value={{
+              className:
+                "article-services__icons article-services__icons--caret",
+            }}
+          >
+            <FaAngleUp />
+          </IconContext.Provider>
+
+          <div className="article-services__text">
+            <h3 className="heading-three">TAX ACCOUNTING & PREPARATION</h3>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis exercitationem dignissimos sed a tempora saepe optio
+              esse aut sequi earum.
+            </p>
+          </div>
+        </section>
+        <section className="article-services__finances">
+          <IconContext.Provider
+            value={{ className: "article-services__icons" }}
+          >
+            <FaPencilAlt />
+          </IconContext.Provider>
+          <div className="article-services__text">
+            <h3 className="heading-three">FINANCIAL REPORTING</h3>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis exercitationem dignissimos sed a tempora saepe optio
+              esse aut sequi earum.
+            </p>
+          </div>
+        </section>
+        <section className="article-services__bookkeeping">
+          <IconContext.Provider
+            value={{ className: "article-services__icons" }}
+          >
+            <FaBriefcase />
+          </IconContext.Provider>
+          <div className="article-services__text">
+            <h3 className="heading-three">BOOKKEEPING SERVICES</h3>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis exercitationem dignissimos sed a tempora saepe optio
+              esse aut sequi earum.
+            </p>
+          </div>
+        </section>
+        <section className="article-services__payroll">
+          <IconContext.Provider
+            value={{ className: "article-services__icons" }}
+          >
+            <FaPaperclip />
+          </IconContext.Provider>
+          <div className="article-services__text">
+            <h3 className="heading-three">PAYROLL SERVICES</h3>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis exercitationem dignissimos sed a tempora saepe optio
+              esse aut sequi earum.
+            </p>
+          </div>
+        </section>
       </article>
 
       <article className="article-about">
