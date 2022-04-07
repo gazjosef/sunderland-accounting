@@ -101,8 +101,15 @@ export default function Home() {
       </article>
 
       <article className="article-about">
+        <section className="article-about__title">Meet The Team</section>
         <section className="article-about__intro"></section>
         <section className="article-about__image"></section>
+        <section className="article-about__intro"></section>
+        <section className="article-about__image"></section>
+        <section className="article-about__image"></section>
+        <section className="article-about__intro"></section>
+        <section className="article-about__image"></section>
+        <section className="article-about__intro"></section>
       </article>
 
       <article className="article-contact">
