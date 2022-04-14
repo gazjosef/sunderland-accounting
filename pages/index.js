@@ -101,19 +101,90 @@ export default function Home() {
       </article>
 
       <article className="article-about">
-        <section className="article-about__title">Meet The Team</section>
-        <section className="article-about__intro"></section>
-        <section className="article-about__image"></section>
-        <section className="article-about__intro"></section>
-        <section className="article-about__image"></section>
-        <section className="article-about__image"></section>
-        <section className="article-about__intro"></section>
-        <section className="article-about__image"></section>
-        <section className="article-about__intro"></section>
+        <section className="article-about__title">
+          <h2 className="heading-two">Meet The Team</h2>
+        </section>
+        <section className="article-about__gallery">
+          <section className="article-about__team">
+            <img
+              src="/images/team/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+              alt=""
+              className="section-about__img"
+            />
+            <div className="article-about__desc">
+              <h3 className="heading-three">Founding Partner & Chairman</h3>
+              <h3 className="heading-three heading-three--lighter">
+                Jamie Ryder
+              </h3>
+            </div>
+          </section>
+          <section className="article-about__team">
+            <img
+              src="/images/team/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg"
+              alt=""
+              className="section-about__img"
+            />
+            <div className="article-about__desc">
+              <h3 className="heading-three">Managing Partner</h3>
+              <h3 className="heading-three heading-three--lighter">
+                Jenete Ekwueme
+              </h3>
+            </div>
+          </section>
+          <section className="article-about__team">
+            <img
+              src="/images/team/mateus-campos-felipe-WnPJft0DJpk-unsplash.jpg"
+              alt=""
+              className="section-about__img"
+            />
+            <div className="article-about__desc">
+              <h3 className="heading-three">Associate Director</h3>
+              <h3 className="heading-three heading-three--lighter">
+                Isabella Telfer
+              </h3>
+            </div>
+          </section>
+          <section className="article-about__team">
+            <img
+              src="/images/team/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg"
+              alt=""
+              className="section-about__img"
+            />
+            <div className="article-about__desc">
+              <h3 className="heading-three">Accounting and Tax Manager</h3>
+              <h3 className="heading-three heading-three--lighter">
+                Jing Chao
+              </h3>
+            </div>
+          </section>
+        </section>
       </article>
 
       <article className="article-contact">
-        <section className="article-contact__details"></section>
+        <section className="article-contact__details">
+          <h2 className="heading-two">Contact Us</h2>
+          <h3 className="heading-three">Address</h3>
+          <p className="paragraph">
+            123 Sutherland Street <br />
+            Sutherland NSW 2000
+          </p>
+          <h3 className="heading-three">Hours</h3>
+          <p className="paragraph">
+            Sun: Closed <br />
+            Mon: 9am - 5pm <br />
+            Tue: 9am - 5pm <br />
+            Wed: 9am - 5pm <br />
+            Thu: 9am - 6pm <br />
+            Fri: 9am - 5pm <br />
+            Sat: Closed <br />
+          </p>
+          <h3 className="heading-three">Contact</h3>
+          <p className="paragraph">
+            Phone: 02 9955 4488
+            <br />
+            Email: info@sutherland.com.au <br />
+          </p>
+        </section>
         <section className="article-contact__map"></section>
       </article>
     </>

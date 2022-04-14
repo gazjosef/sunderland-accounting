@@ -20,10 +20,6 @@
     font-size: 1.75rem;
   }
 
-  @include respond(tab-port) {
-    position: relative;
-  }
-
   a {
     color: $color-white;
   }

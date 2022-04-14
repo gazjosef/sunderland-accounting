@@ -17,8 +17,25 @@ body {
 
 .heading-two {
   margin-bottom: 1rem;
+  color: $color-blue-400;
+  text-transform: uppercase;
 }
 
 .heading-three {
   margin-bottom: 1rem;
+
+  &--lighter {
+    color: $color-grey-600;
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  line-height: 2;
+  text-align: justify;
+  max-width: 45ch;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
