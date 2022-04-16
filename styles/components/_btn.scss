@@ -4,7 +4,6 @@
   border: 1px solid $color-blue-300;
   border-radius: 10px;
   padding: 1.5rem 3rem;
-  margin-top: 3rem;
 
   font-size: 1.5rem;
   font-weight: 700;
@@ -12,4 +11,12 @@
   text-transform: uppercase;
 
   color: $color-blue-300;
+
+  &--home {
+    margin-top: 3rem;
+  }
+
+  &--contact {
+    margin: 3.5rem 0 5rem;
+  }
 }

@@ -4,6 +4,7 @@ import {
   FaPencilAlt,
   FaBriefcase,
   FaPaperclip,
+  FaPhone,
 } from "react-icons/fa";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
             We help lodging tax return Sydney from anywhere. Get your biggest
             tax refund with no tax knowledge needed.
           </p>
-          <button className="btn">Book Appointment</button>
+          <button className="btn btn--home">Book Appointment</button>
         </section>
       </article>
 
@@ -162,11 +163,14 @@ export default function Home() {
 
       <article className="article-contact">
         <section className="article-contact__details">
-          <h2 className="heading-two">Contact Us</h2>
+          <h2 className="heading-two u-margin-bottom-small">Contact Us</h2>
+          <button className="btn btn--contact align-items">
+            <FaPhone className="align-items__icon" /> 02 9955 4488
+          </button>
           <h3 className="heading-three">Address</h3>
           <p className="paragraph">
-            123 Sutherland Street <br />
-            Sutherland NSW 2000
+            500 George Street <br />
+            Sydney NSW 2000
           </p>
           <h3 className="heading-three">Hours</h3>
           <p className="paragraph">
@@ -178,10 +182,8 @@ export default function Home() {
             Fri: 9am - 5pm <br />
             Sat: Closed <br />
           </p>
-          <h3 className="heading-three">Contact</h3>
+          <h3 className="heading-three">Email</h3>
           <p className="paragraph">
-            Phone: 02 9955 4488
-            <br />
             Email: info@sutherland.com.au <br />
           </p>
         </section>

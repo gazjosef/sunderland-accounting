@@ -115,7 +115,14 @@
   &__desc {
     margin-bottom: auto;
     padding: 2rem;
+    height: 13rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     font-size: 0.8em;
+    text-align: center;
   }
 }
 
@@ -127,10 +134,16 @@
     border: 1px solid $color-black;
     padding: 2rem;
     grid-column: 1 / span 1;
+
+    p,
+    h3 {
+      font-size: 0.9em;
+    }
   }
 
   &__map {
-    background-color: sandybrown;
+    background-image: url(../../public/images/map/googleMaps.png);
+    background-size: cover;
     grid-column: 2 / span 2;
   }
 }
