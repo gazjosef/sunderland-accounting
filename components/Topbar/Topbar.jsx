@@ -7,7 +7,7 @@ function Topbar() {
       <div className="topbar__info">
         <div className="topbar__phone align-items">
           <IconContext.Provider value={{ className: "align-items__icons" }}>
-            <FaPhone className="align-items__icon" /> 0411 222 333
+            <FaPhone className="align-items__icon" /> 02 9644 9220
           </IconContext.Provider>
         </div>
         <div className="topbar__social-media align-items">

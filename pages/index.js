@@ -166,7 +166,7 @@ export default function Home() {
         <section className="article-contact__details">
           <h2 className="heading-two u-margin-bottom-small">Contact Us</h2>
           <button className="btn btn--contact align-items">
-            <FaPhone className="align-items__icon" /> 02 9955 4488
+            <FaPhone className="align-items__icon" /> 02 9644 9220
           </button>
           <h3 className="heading-three">Address</h3>
           <p className="paragraph">
