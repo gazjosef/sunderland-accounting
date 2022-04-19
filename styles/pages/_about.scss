@@ -30,7 +30,7 @@
       object-fit: cover;
 
       @include respond(phone) {
-        // height: 20rem;
+        height: 45rem;
       }
     }
   }

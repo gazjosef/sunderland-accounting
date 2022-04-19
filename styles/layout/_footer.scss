@@ -39,6 +39,11 @@
     li {
       list-style: none;
     }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(1, auto);
+      text-align: center;
+    }
   }
 
   &__copyright {

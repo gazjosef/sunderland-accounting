@@ -185,7 +185,7 @@ export default function Home() {
           </p>
           <h3 className="heading-three">Email</h3>
           <p className="paragraph">
-            Email: info@sutherland.com.au <br />
+            Email: info@sunderland.com.au <br />
           </p>
         </section>
         <section className="article-contact__map">{/* <Map /> */}</section>
