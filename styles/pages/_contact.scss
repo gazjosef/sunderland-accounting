@@ -1,0 +1,38 @@
+.article-contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__details {
+    border: 1px solid $color-black;
+    padding: 2rem;
+    grid-column: 1 / span 1;
+
+    @include respond(phone) {
+      grid-row: 1 / span 1;
+    }
+
+    p,
+    h3 {
+      font-size: 0.9em;
+    }
+  }
+
+  &__map {
+    background-image: url(../../public/images/map/googleMaps.png);
+    background-size: cover;
+    border-top: 1px solid $color-black;
+    border-right: 1px solid $color-black;
+    border-bottom: 1px solid $color-black;
+    grid-column: 2 / span 2;
+
+    @include respond(phone) {
+      height: 25rem;
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 1;
+    }
+  }
+}

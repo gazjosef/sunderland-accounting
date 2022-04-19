@@ -13,7 +13,6 @@
   &__title {
     text-align: center;
     text-transform: uppercase;
-    color: $color-blue-300;
   }
 
   &__icons {
@@ -34,6 +33,7 @@
     grid-template-columns: repeat(6, auto);
     column-gap: 1rem;
 
+    font-weight: 600;
     text-transform: uppercase;
 
     li {
@@ -42,7 +42,7 @@
   }
 
   &__copyright {
-    background-color: $color-black;
+    background-color: $color-black-950;
     height: 5rem;
     width: 100%;
 

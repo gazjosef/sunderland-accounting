@@ -6,11 +6,12 @@ import {
   FaPaperclip,
   FaPhone,
 } from "react-icons/fa";
+// import Map from "../components/Map/Map";
 
 export default function Home() {
   return (
     <>
-      <article className="article-home">
+      <article id="home" className="article-home">
         <section>
           <h1 className="heading-one">
             SMARTER WAY TO FILE TAX RETURN{" "}
@@ -24,7 +25,7 @@ export default function Home() {
         </section>
       </article>
 
-      <article className="article-services">
+      <article id="services" className="article-services">
         <section className="article-services__intro">
           <h2 className="heading-two">
             PROVIDING YOU COMPREHENSIVE TAX, ACCOUNTING AND PAYROLL SERVICES.
@@ -101,7 +102,7 @@ export default function Home() {
         </section>
       </article>
 
-      <article className="article-about">
+      <article id="about" className="article-about">
         <section className="article-about__title">
           <h2 className="heading-two">Meet The Team</h2>
         </section>
@@ -161,7 +162,7 @@ export default function Home() {
         </section>
       </article>
 
-      <article className="article-contact">
+      <article id="contact" className="article-contact">
         <section className="article-contact__details">
           <h2 className="heading-two u-margin-bottom-small">Contact Us</h2>
           <button className="btn btn--contact align-items">
@@ -169,17 +170,17 @@ export default function Home() {
           </button>
           <h3 className="heading-three">Address</h3>
           <p className="paragraph">
-            500 George Street <br />
-            Sydney NSW 2000
+            5/8 Ave of the Americas <br />
+            Newington NSW 2127
           </p>
           <h3 className="heading-three">Hours</h3>
           <p className="paragraph">
             Sun: Closed <br />
-            Mon: 9am - 5pm <br />
-            Tue: 9am - 5pm <br />
-            Wed: 9am - 5pm <br />
-            Thu: 9am - 6pm <br />
-            Fri: 9am - 5pm <br />
+            Mon: 8:30am - 5:30pm <br />
+            Tue: 8:30am - 5:30pm <br />
+            Wed: 8:30am - 5:30pm <br />
+            Thu: 8:30am - 5:30pm <br />
+            Fri: 8:30am - 5:30pm <br />
             Sat: Closed <br />
           </p>
           <h3 className="heading-three">Email</h3>
@@ -187,7 +188,7 @@ export default function Home() {
             Email: info@sutherland.com.au <br />
           </p>
         </section>
-        <section className="article-contact__map"></section>
+        <section className="article-contact__map">{/* <Map /> */}</section>
       </article>
     </>
   );
