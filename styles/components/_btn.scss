@@ -12,6 +12,15 @@
 
   color: $color-blue-300;
 
+  a {
+    color: $color-blue-300;
+
+    &::focus,
+    &::visited {
+      color: $color-blue-300;
+    }
+  }
+
   &--home {
     margin-top: 3rem;
   }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { IconContext } from "react-icons";
 import {
   FaAngleUp,
@@ -21,7 +22,11 @@ export default function Home() {
             We help lodging tax return Sydney from anywhere. Get your biggest
             tax refund with no tax knowledge needed.
           </p>
-          <button className="btn btn--home">Book Appointment</button>
+          <button className="btn btn--home">
+            <Link href="#contact">
+              <a>Book Appointment</a>
+            </Link>
+          </button>
         </section>
       </article>
 
