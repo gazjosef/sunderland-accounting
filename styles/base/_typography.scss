@@ -7,8 +7,12 @@ body {
 }
 
 .heading-one {
-  font-size: 4rem;
+  font-size: 6rem;
   max-width: 30ch;
+
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
 
   span {
     color: $color-blue-300;

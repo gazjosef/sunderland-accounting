@@ -109,7 +109,11 @@ export default function Home() {
 
       <article id="about" className="article-about">
         <section className="article-about__title">
-          <h2 className="heading-two">Meet The Team</h2>
+          <h2 className="heading-two">About Sunderland Accounting</h2>
+        </section>
+        <section className="article-about__about">
+          <div>IMAGE</div>
+          <div>TEXT</div>
         </section>
         <section className="article-about__gallery">
           <section className="article-about__team">
@@ -168,32 +172,73 @@ export default function Home() {
       </article>
 
       <article id="contact" className="article-contact">
-        <section className="article-contact__details">
+        <section className="article-contact__title">
           <h2 className="heading-two u-margin-bottom-small">Contact Us</h2>
-          <button className="btn btn--contact align-items">
-            <FaPhone className="align-items__icon" /> 02 9644 9220
-          </button>
-          <h3 className="heading-three">Address</h3>
-          <p className="paragraph">
-            5/8 Ave of the Americas <br />
-            Newington NSW 2127
-          </p>
-          <h3 className="heading-three">Hours</h3>
-          <p className="paragraph">
-            Sun: Closed <br />
-            Mon: 8:30am - 5:30pm <br />
-            Tue: 8:30am - 5:30pm <br />
-            Wed: 8:30am - 5:30pm <br />
-            Thu: 8:30am - 5:30pm <br />
-            Fri: 8:30am - 5:30pm <br />
-            Sat: Closed <br />
-          </p>
-          <h3 className="heading-three">Email</h3>
-          <p className="paragraph">
-            Email: info@sunderland.com.au <br />
-          </p>
         </section>
-        <section className="article-contact__map">{/* <Map /> */}</section>
+        <section className="article-contact__contact">
+          <section className="article-contact__map"></section>
+          <section className="article-contact__details">
+            <button className="btn btn--contact align-items">
+              <FaPhone className="align-items__icon" /> 02 9644 9220
+            </button>
+            <h3 className="heading-three">Address</h3>
+            <p className="paragraph">
+              5/8 Ave of the Americas <br />
+              Newington NSW 2127
+            </p>
+            <h3 className="heading-three">Hours</h3>
+            <p className="paragraph">
+              Sun: Closed <br />
+              Mon: 8:30am - 5:30pm <br />
+              Tue: 8:30am - 5:30pm <br />
+              Wed: 8:30am - 5:30pm <br />
+              Thu: 8:30am - 5:30pm <br />
+              Fri: 8:30am - 5:30pm <br />
+              Sat: Closed <br />
+            </p>
+            <h3 className="heading-three">Email</h3>
+            <p className="paragraph">
+              Email: info@sunderland.com.au <br />
+            </p>
+          </section>
+          <section className="article-contact__form">
+            <form action="/action_page.php" className="form">
+              <label htmlFor="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label htmlFor="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label htmlFor="lname">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+              />
+
+              <label htmlFor="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style={{ height: "130px" }}
+              ></textarea>
+
+              <input type="submit" value="Submit" className="btn" />
+            </form>
+          </section>
+        </section>
       </article>
     </>
   );

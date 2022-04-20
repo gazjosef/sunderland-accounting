@@ -9,6 +9,16 @@
     }
   }
 
+  &__about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > * {
+      display: grid;
+      place-content: center;
+    }
+  }
+
   &__gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
