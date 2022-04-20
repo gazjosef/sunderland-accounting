@@ -112,8 +112,12 @@ export default function Home() {
           <h2 className="heading-two">About Sunderland Accounting</h2>
         </section>
         <section className="article-about__about">
-          <div>IMAGE</div>
-          <div>TEXT</div>
+          <p className="paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            veritatis itaque harum delectus atque deserunt ex quibusdam vero
+            cumque ut, explicabo saepe doloremque quos incidunt, est in nisi at
+            iste cum exercitationem quidem dolores?
+          </p>
         </section>
         <section className="article-about__gallery">
           <section className="article-about__team">

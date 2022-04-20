@@ -23,6 +23,12 @@ body {
   margin-bottom: 1rem;
 
   text-transform: uppercase;
+
+  font-size: 3.5rem;
+
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
 }
 
 .heading-three {
@@ -34,10 +40,15 @@ body {
 }
 
 .paragraph {
-  font-size: $default-font-size;
   line-height: 2;
   text-align: justify;
   max-width: 45ch;
+
+  font-size: 2rem;
+
+  @include respond(tab-land) {
+    font-size: $default-font-size;
+  }
 
   &:not(:last-child) {
     margin-bottom: 3rem;

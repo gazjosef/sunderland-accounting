@@ -1,6 +1,13 @@
 .article-about {
+  display: grid;
+  row-gap: 3rem;
+
+  @include respond(tab-port) {
+    row-gap: 2rem;
+  }
+
   &__title {
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
     text-align: center;
 
     & > * {
@@ -10,22 +17,19 @@
   }
 
   &__about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    & > * {
-      display: grid;
-      place-content: center;
-    }
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__gallery {
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
     column-gap: 2.5rem;
 
     @include respond(tab-port) {
+      margin-top: 3rem;
       grid-template-columns: repeat(2, 1fr);
       row-gap: 2rem;
     }
@@ -59,7 +63,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    font-size: 0.8em;
     text-align: center;
+
+    @include respond(tab-land) {
+      font-size: 0.8em;
+    }
   }
 }
