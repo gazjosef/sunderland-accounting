@@ -108,16 +108,25 @@ export default function Home() {
       </article>
 
       <article id="about" className="article-about">
-        <section className="article-about__title">
-          <h2 className="heading-two">About Sunderland Accounting</h2>
-        </section>
         <section className="article-about__about">
-          <p className="paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            veritatis itaque harum delectus atque deserunt ex quibusdam vero
-            cumque ut, explicabo saepe doloremque quos incidunt, est in nisi at
-            iste cum exercitationem quidem dolores?
-          </p>
+          <section className="article-about__title">
+            <h2 className="heading-two">About Us</h2>
+          </section>
+          <section className="article-about__text">
+            <p className="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam veritatis itaque harum delectus atque deserunt ex
+              quibusdam vero cumque ut, explicabo saepe doloremque quos
+              incidunt, est in nisi at iste cum exercitationem quidem dolores?
+            </p>
+            <p className="paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Deserunt, nesciunt totam. Eveniet sunt quidem unde quos nam
+              adipisci assumenda suscipit aliquam, iste optio perspiciatis.
+              Sapiente quisquam nihil accusantium iusto nam aliquam beatae neque
+              modi nemo.
+            </p>
+          </section>
         </section>
         <section className="article-about__gallery">
           <section className="article-about__team">
@@ -182,9 +191,6 @@ export default function Home() {
         <section className="article-contact__contact">
           <section className="article-contact__map"></section>
           <section className="article-contact__details">
-            <button className="btn btn--contact align-items">
-              <FaPhone className="align-items__icon" /> 02 9644 9220
-            </button>
             <h3 className="heading-three">Address</h3>
             <p className="paragraph">
               5/8 Ave of the Americas <br />
@@ -204,6 +210,9 @@ export default function Home() {
             <p className="paragraph">
               Email: info@sunderland.com.au <br />
             </p>
+            <button className="btn btn--contact align-items">
+              <FaPhone className="align-items__icon" /> 02 9644 9220
+            </button>
           </section>
           <section className="article-contact__form">
             <form action="/action_page.php" className="form">
