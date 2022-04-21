@@ -48,6 +48,10 @@
       font-size: 2rem;
     }
 
+    @include respond(tab-port) {
+      width: 70vw;
+    }
+
     @include respond(phone) {
       grid-template-columns: repeat(1, auto);
       text-align: center;
