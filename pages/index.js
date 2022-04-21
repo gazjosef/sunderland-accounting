@@ -36,9 +36,12 @@ export default function Home() {
             PROVIDING YOU COMPREHENSIVE TAX, ACCOUNTING AND PAYROLL SERVICES.
           </h2>
           <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perspiciatis exercitationem dignissimos sed a tempora saepe optio
-            esse aut sequi earum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+            distinctio exercitationem harum nulla temporibus doloribus deleniti
+            reiciendis hic, aspernatur consequatur quidem cum fugit quis placeat
+            laudantium voluptas iure tempore dolorum iste deserunt qui minima
+            dolores! Quae itaque molestias tempore tempora ad amet impedit
+            corrupti animi.
           </p>
         </section>
         <section className="article-services__taxes">
