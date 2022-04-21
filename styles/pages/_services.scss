@@ -1,7 +1,7 @@
 .article-services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 3rem;
 
   @include respond(tab-port) {
     grid-template-columns: repeat(2, 1fr);
@@ -41,11 +41,15 @@
 
   &__text {
     width: 60%;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
 
-    @include respond(tab-land) {
-      font-size: 6rem;
+    @include respond(big-desktop) {
+      font-size: 2.25rem;
     }
+
+    // @include respond(tab-land) {
+    //   font-size: 6rem;
+    // }
   }
 
   &__intro {
