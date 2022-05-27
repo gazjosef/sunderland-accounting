@@ -1,11 +1,24 @@
+import { useEffect, useRef } from "react";
+import { gsapFadeIn } from "@/styles/base/animations";
+
 export default function About() {
+  const aboutTitleRef = useRef(null);
+  const aboutTextRef = useRef(null);
+  const aboutGalleryRef = useRef(null);
+
+  useEffect(() => {
+    gsapFadeIn(aboutTitleRef, 0.3);
+    gsapFadeIn(aboutTextRef, 0.6);
+    gsapFadeIn(aboutGalleryRef, 0.7);
+  }, []);
+
   return (
     <article id="about" className="article-about">
       <section className="article-about__about">
-        <section className="article-about__title">
+        <section className="article-about__title" ref={aboutTitleRef}>
           <h2 className="heading-two">About Us</h2>
         </section>
-        <section className="article-about__text">
+        <section className="article-about__text" ref={aboutTextRef}>
           <p className="paragraph">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             veritatis itaque harum delectus atque deserunt ex quibusdam vero
@@ -20,7 +33,7 @@ export default function About() {
           </p>
         </section>
       </section>
-      <section className="article-about__gallery">
+      <section className="article-about__gallery" ref={aboutGalleryRef}>
         <section className="article-about__team">
           <img
             src="/images/team/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"

@@ -23,10 +23,10 @@ export default function Services() {
       el,
       {
         opacity: 0,
-        y: -150,
+        y: -200,
       },
       {
-        opacity: 100,
+        opacity: 1,
         y: 0,
         duration: 2,
         delay: delay,
