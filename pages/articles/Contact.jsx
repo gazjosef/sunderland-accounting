@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { FaPhone } from "react-icons/fa";
-import { gsapFadeIn } from "@/styles/base/animations";
+import { gsapFadeIn } from "../../components/Animations.js";
 import MapContainer from "@/components/Map/MapContainer";
 
 export default function Contact() {

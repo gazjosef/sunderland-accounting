@@ -6,9 +6,7 @@ import {
   FaBriefcase,
   FaPaperclip,
 } from "react-icons/fa";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { gsapFadeIn } from "../../components/Animations.js";
 
 export default function Services() {
   const servicesIntroRef = useRef(null);
@@ -16,31 +14,6 @@ export default function Services() {
   const servicesFinancesRef = useRef(null);
   const servicesBookkeepingRef = useRef(null);
   const servicesPayrollRef = useRef(null);
-
-  const gsapFadeIn = (ref, delay) => {
-    const el = ref.current;
-    gsap.fromTo(
-      el,
-      {
-        opacity: 0,
-        y: -200,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 2,
-        delay: delay,
-        scrollTrigger: {
-          trigger: el,
-          markers: {
-            startColor: "purple",
-            endColor: "fuchsia",
-            fontSize: "3rem",
-          },
-        },
-      }
-    );
-  };
 
   useEffect(() => {
     gsapFadeIn(servicesIntroRef, 0.3);

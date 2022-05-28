@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { gsapFadeIn } from "@/styles/base/animations";
+import { gsapFadeIn } from "../../components/Animations.js";
 
 export default function About() {
   const aboutTitleRef = useRef(null);

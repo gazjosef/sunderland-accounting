@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { gsapFadeIn } from "../../components/Animations.js";
 
 export default function Hero() {
   return (

@@ -15,6 +15,7 @@ export const gsapFadeIn = (ref, delay) => {
       y: 0,
       duration: 1,
       delay: delay,
+      ease: "bounce",
       scrollTrigger: {
         trigger: el,
         markers: {
