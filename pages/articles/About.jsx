@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { gsapFadeIn } from "../../components/Animations.js";
+import { gsapFadeIn, gsapFadeInStagger } from "../../components/Animations.js";
 
 export default function About() {
   const aboutTitleRef = useRef(null);
@@ -7,9 +7,9 @@ export default function About() {
   const aboutGalleryRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(aboutTitleRef, 0.3);
-    gsapFadeIn(aboutTextRef, 0.6);
-    gsapFadeIn(aboutGalleryRef, 0.7);
+    gsapFadeIn(aboutTitleRef, 0.2);
+    gsapFadeIn(aboutTextRef, 0.3);
+    gsapFadeInStagger(aboutGalleryRef, 0.35);
   }, []);
 
   return (

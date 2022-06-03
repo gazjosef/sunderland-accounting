@@ -10,10 +10,10 @@ export default function Contact() {
   const contactFormRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(contactTitleRef, 1);
-    gsapFadeIn(contactMapRef, 1);
-    gsapFadeIn(contactDetailsRef, 1);
-    gsapFadeIn(contactFormRef, 1);
+    gsapFadeIn(contactTitleRef, 0.2);
+    // gsapFadeIn(contactMapRef, 1);
+    gsapFadeIn(contactDetailsRef, 0.3);
+    gsapFadeIn(contactFormRef, 0.35);
   });
 
   return (

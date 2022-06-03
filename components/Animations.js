@@ -8,21 +8,47 @@ export const gsapFadeIn = (ref, delay) => {
     el,
     {
       opacity: 0,
-      y: -200,
+      y: -50,
     },
     {
       opacity: 1,
       y: 0,
       duration: 1,
       delay: delay,
-      ease: "bounce",
+      ease: "power2",
       scrollTrigger: {
         trigger: el,
-        markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "3rem",
-        },
+        // markers: {
+        //   startColor: "purple",
+        //   endColor: "fuchsia",
+        //   fontSize: "3rem",
+        // },
+      },
+    }
+  );
+};
+
+export const gsapFadeInStagger = (ref, stagger) => {
+  const el = ref.current;
+  gsap.fromTo(
+    el,
+    {
+      opacity: 0,
+      y: -50,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: stagger,
+      ease: "power2",
+      scrollTrigger: {
+        trigger: el,
+        // markers: {
+        //   startColor: "purple",
+        //   endColor: "fuchsia",
+        //   fontSize: "3rem",
+        // },
       },
     }
   );
