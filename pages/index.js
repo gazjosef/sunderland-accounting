@@ -2,6 +2,7 @@ import Hero from "./articles/Hero";
 import Services from "./articles/Services";
 import About from "./articles/About";
 import Contact from "./articles/Contact";
+import ScrollToTop from "../components/Button/ScrollButton";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Services />
       <About />
       <Contact />
+      <ScrollToTop />
     </>
   );
 }
