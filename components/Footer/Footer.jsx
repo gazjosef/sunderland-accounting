@@ -11,7 +11,7 @@ export const Footer = () => {
     <footer className="footer">
       <section className="footer__info">
         <section className="footer__title">
-          <h2 className="heading-two">Sunderland Accounting</h2>
+          <h2>Sunderland Accounting</h2>
         </section>
         <section className="footer__links">
           <li>Home</li>
