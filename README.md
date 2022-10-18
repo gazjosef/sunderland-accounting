@@ -14,7 +14,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/gazjosef/ant-software">
+  <a href="https://github.com/gazjosef/sunderland-accounting">
     <img src="/public/favicon_io/android-chrome-512x512.png" alt="Logo" width="250" height="250">
   </a>
 
