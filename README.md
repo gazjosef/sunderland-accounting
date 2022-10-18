@@ -3,16 +3,15 @@
 <br />
 <div align="center">
   <a href="https://github.com/gazjosef/sunderland-accounting">
-    <img src="public/favicon_io/android-chrome-512x512.png" alt="Logo" width="250" height="250">
+    <img src="public/favicon/android-chrome-512x512.png" alt="Logo" width="250" height="250">
   </a>
 
 <h3 align="center">Sunderland Accounting</h3>
 
   <p align="center">
-
-
     <br />
   </p>
+  
 </div>
 
 
