@@ -29,13 +29,12 @@ export default function Services() {
         <h2 className="heading-two">
           PROVIDING YOU COMPREHENSIVE TAX, ACCOUNTING AND PAYROLL SERVICES.
         </h2>
-        <p className="paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
-          distinctio exercitationem harum nulla temporibus doloribus deleniti
-          reiciendis hic, aspernatur consequatur quidem cum fugit quis placeat
-          laudantium voluptas iure tempore dolorum iste deserunt qui minima
-          dolores! Quae itaque molestias tempore tempora ad amet impedit
-          corrupti animi.
+        <p>
+          We offer a customized approach to meet the specific needs of each of
+          our clients, and strive to provide the highest level of quality and
+          efficiency in all that we do. We understand the importance of staying
+          compliant with tax laws and regulations, and work closely with our
+          clients to help them make informed financial decisions.
         </p>
       </section>
       <section className="article-services__taxes" ref={servicesTaxesRef}>
@@ -48,10 +47,12 @@ export default function Services() {
         </IconContext.Provider>
         <div className="article-services__text">
           <h3 className="heading-three">TAX ACCOUNTING & PREPARATION</h3>
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perspiciatis exercitationem dignissimos sed a tempora saepe optio
-            esse aut sequi earum.
+          <p>
+            Our team of certified tax professionals have a deep understanding of
+            the tax code and are equipped to handle all of your tax-related
+            needs. We offer a full range of tax services, including tax
+            planning, preparation, and representation before the tax
+            authorities.
           </p>
         </div>
       </section>
@@ -62,7 +63,7 @@ export default function Services() {
         </IconContext.Provider>
         <div className="article-services__text">
           <h3 className="heading-three">FINANCIAL REPORTING</h3>
-          <p className="paragraph">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Perspiciatis exercitationem dignissimos sed a tempora saepe optio
             esse aut sequi earum.
@@ -79,7 +80,7 @@ export default function Services() {
         </IconContext.Provider>
         <div className="article-services__text">
           <h3 className="heading-three">BOOKKEEPING SERVICES</h3>
-          <p className="paragraph">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Perspiciatis exercitationem dignissimos sed a tempora saepe optio
             esse aut sequi earum.
@@ -93,7 +94,7 @@ export default function Services() {
         </IconContext.Provider>
         <div className="article-services__text">
           <h3 className="heading-three">PAYROLL SERVICES</h3>
-          <p className="paragraph">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Perspiciatis exercitationem dignissimos sed a tempora saepe optio
             esse aut sequi earum.

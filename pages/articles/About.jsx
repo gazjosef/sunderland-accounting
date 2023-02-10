@@ -20,16 +20,18 @@ export default function About() {
         </section>
         <section className="article-about__text" ref={aboutTextRef}>
           <p className="paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            veritatis itaque harum delectus atque deserunt ex quibusdam vero
-            cumque ut, explicabo saepe doloremque quos incidunt, est in nisi at
-            iste cum exercitationem quidem dolores?
+            We are a professional accounting firm dedicated to providing
+            top-notch financial services to businesses and individuals. Our team
+            of experts has a combined experience of several decades in the field
+            of accounting and finance. We offer a wide range of services
+            including bookkeeping, tax planning and preparation, financial
+            statement analysis, and consulting.
           </p>
           <p className="paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt,
-            nesciunt totam. Eveniet sunt quidem unde quos nam adipisci assumenda
-            suscipit aliquam, iste optio perspiciatis. Sapiente quisquam nihil
-            accusantium iusto nam aliquam beatae neque modi nemo.
+            Our goal is to help our clients make informed financial decisions,
+            stay compliant with tax laws, and achieve their financial goals. We
+            are committed to providing personalized, timely and efficient
+            services at an affordable price.
           </p>
         </section>
       </section>
