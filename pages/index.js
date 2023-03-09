@@ -1,7 +1,7 @@
-import Hero from "@/articles/Hero";
-import Services from "@/articles/Services";
-import About from "@/articles/About";
-import Contact from "@/articles/Contact";
+import Hero from "@/components/Section/Hero";
+import Services from "@/components/Section/Services";
+import About from "@/components/Section/About";
+import Contact from "@/components/Section/Contact";
 import ScrollToTop from "@/components/UI/ScrollButton";
 
 export default function Home() {

@@ -3,13 +3,13 @@
 .article-about,
 .article-contact {
   min-height: 100vh;
-  padding: 10rem 20rem;
+  padding: 10rem 0;
 
   @include respond(tab-land) {
-    padding: 5rem 10rem;
+    padding: 5rem 0;
   }
 
   @include respond(phone) {
-    padding: 2.5rem 5rem;
+    padding: 2.5rem 0;
   }
 }

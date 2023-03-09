@@ -1,125 +1,39 @@
 .navbar {
-  border-bottom: 1px solid $color-white-100;
-  height: 8rem;
-  padding: 1rem 4rem;
-  width: 100%;
-
-  position: absolute;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: $color-white;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-family: $font-primary;
-  font-weight: 500;
-
-  @include respond(tab-land) {
-    height: 6rem;
-    font-size: 1.75rem;
-  }
-
-  a {
-    color: $color-white;
-  }
-
-  &__logo {
-    width: 30rem;
-    justify-self: start;
-
-    span {
-      color: $color-primary-300;
-      font-weight: 700;
-    }
-
-    @include respond(tab-port) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
-    }
-
-    &:focus,
-    &:visited {
-      color: $color-black;
-    }
-  }
+  position: relative;
 
   &__menu {
-    width: 70vw;
-
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 1rem;
-    justify-content: end;
-
-    @include respond(tab-port) {
+    @include respond(sm) {
+      background-color: steelblue;
+      height: 40vh;
       width: 100%;
-      height: 37.5vh;
+      padding: 5rem;
 
-      display: flex;
-      justify-content: flex-start;
+      position: fixed;
       flex-direction: column;
-      position: absolute;
-      top: 6rem;
-      left: -100%;
+      top: 0vh;
+      right: 0;
 
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-
-    &.active {
-      @include respond(tab-port) {
-        background: $color-blue-300;
-        left: 0;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
-      }
+      transform: translateX(100%);
+      transition: 0.5s ease-in;
     }
   }
 
-  &__links {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-
-    @include respond(tab-port) {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-
-    &:focus,
-    &:visited {
-      color: $color-white;
-    }
-
-    &:hover {
-      background-color: $color-primary-300;
-      border-radius: 4px;
-      color: $color-white;
-      transition: all 0.2s ease-out;
-
-      @include respond(tab-port) {
-        border-radius: 0;
-      }
-    }
+  &__active {
+    transform: translateX(0);
   }
 
-  &__menu-icon {
+  &__mobile-nav-toggle {
+    cursor: pointer;
+    aspect-ratio: 1;
+    width: 2rem;
+
     display: none;
 
-    @include respond(tab-port) {
+    font-size: 3rem;
+
+    @include respond(sm) {
       display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
+      z-index: 9999;
     }
   }
 }
