@@ -24,7 +24,7 @@
   }
 
   &__icons {
-    margin: 2rem 2rem 0 0;
+    margin: 2rem 2rem 0;
     color: $color-blue-300;
     font-size: 6rem;
 
@@ -43,15 +43,7 @@
 
   &__text {
     width: 60%;
-    font-size: 1.6rem;
-
-    @include respond(big-desktop) {
-      font-size: 1.8rem;
-    }
-
-    // @include respond(tab-land) {
-    //   font-size: 6rem;
-    // }
+    font-size: clamp(1.6rem, 1.7vw, 1.8rem);
   }
 
   &__intro {

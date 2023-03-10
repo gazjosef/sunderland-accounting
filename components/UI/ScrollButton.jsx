@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IconContext } from "react-icons";
-import { FaArrowCircleUp } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 
 function ScrollButton() {
   const [visible, setVisible] = useState(false);
@@ -28,13 +28,16 @@ function ScrollButton() {
   }
 
   return (
-    <button className="scrollButton">
-      <IconContext.Provider value={{ className: "scrollButton__icon" }}>
-        <FaArrowCircleUp
-          onClick={scrollToTop}
-          style={{ display: visible ? "inline" : "none" }}
-        />
-      </IconContext.Provider>
+    <button
+      className="scrollButton | "
+      style={{ display: visible ? "inline" : "none" }}
+    >
+      <div className="u-flex u-flex-col u-items-center u-justify-center u-gap-0-5">
+        <IconContext.Provider value={{ className: "scrollButton__icon" }}>
+          <FaArrowUp onClick={scrollToTop} />
+        </IconContext.Provider>
+        <h3 className="scrollButton__text | u-clr-white-0">TOP</h3>
+      </div>
     </button>
   );
 }

@@ -43,7 +43,7 @@ const Navbar = () => {
           return (
             <li key={index} className="hover-underline-animation">
               <a
-                className="u-clr-black-1000 u-ff-nav u-fw-semi-bold u-uppercase"
+                className="u-clr-white-0 u-ff-nav u-fw-bold u-uppercase"
                 href={item.url}
               >
                 {item.title}

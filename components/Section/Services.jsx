@@ -49,7 +49,10 @@ export default function Services() {
           </div>
         </section>
 
-        <section className="article-services__finances" ref={servicesTaxesRef}>
+        <section
+          className="article-services__finances"
+          ref={servicesBookkeepingRef}
+        >
           <IconContext.Provider
             value={{ className: "article-services__icons" }}
           >
@@ -65,10 +68,7 @@ export default function Services() {
           </div>
         </section>
 
-        <section
-          className="article-services__bookkeeping"
-          ref={servicesBookkeepingRef}
-        >
+        <section className="article-services__bookkeeping">
           <IconContext.Provider
             value={{ className: "article-services__icons" }}
           >
@@ -84,10 +84,7 @@ export default function Services() {
           </div>
         </section>
 
-        <section
-          className="article-services__payroll"
-          ref={servicesBookkeepingRef}
-        >
+        <section className="article-services__payroll">
           <IconContext.Provider
             value={{ className: "article-services__icons" }}
           >

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import useGsapFadeIn from "hooks/useGsapFadeIn";
+import Header from "../Layout/Header";
 
 export default function Hero() {
   const [heroTitleRef, heroTextRef, heroImgRef] = useGsapFadeIn();
 
   return (
-    <section id="home" className="article-home">
+    <section id="home" className="article-home u-relative">
+      <Header />
       <div className="container">
         <h1 className="heading-one" ref={heroTitleRef}>
           SMARTER WAY TO FILE TAX RETURN{" "}

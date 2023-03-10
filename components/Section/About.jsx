@@ -8,24 +8,25 @@ export default function About() {
       name: "Jamie Ryder",
       position: "Founding Partner & Chairman",
       image_src:
-        "/images/team/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg",
+        "/images/team/tinified/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg",
     },
     {
       name: "Jenete Ekwueme",
       position: "Managing Partner",
       image_src:
-        "/images/team/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg",
+        "/images/team/tinified/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg",
     },
     {
       name: "Isabella Telfer",
       position: "Associate Director",
-      image_src: "/images/team/mateus-campos-felipe-WnPJft0DJpk-unsplash.jpg",
+      image_src:
+        "/images/team/tinified/mateus-campos-felipe-WnPJft0DJpk-unsplash.jpg",
     },
     {
       name: "Jing Chao",
-      position: "Accounting and Tax Manager",
+      position: "Accounting & Tax Manager",
       image_src:
-        "/images/team/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg",
+        "/images/team/tinified/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg",
     },
   ];
 
