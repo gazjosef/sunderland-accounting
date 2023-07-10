@@ -1,4 +1,5 @@
 import useGsapFadeIn from "hooks/useGsapFadeIn";
+import Image from "next/image";
 
 export default function About() {
   const [aboutTitleRef, aboutTextRef, aboutGalleryRef] = useGsapFadeIn();
@@ -58,12 +59,16 @@ export default function About() {
         <section className="article-about__gallery" ref={aboutGalleryRef}>
           {team.map((member, index) => {
             return (
-              <section className="article-about__team" key={index}>
-                <img
-                  src={member.image_src}
-                  alt={member.name}
-                  className="section-about__img"
-                />
+              <section className="article-about__team | u-relative" key={index}>
+                <div className="section-about__img">
+                  <Image
+                    src={member.image_src}
+                    alt={member.name}
+                    objectFit="contain"
+                    layout="fill"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="article-about__desc">
                   <h3 className="heading-three">{member.position}</h3>
                   <h3 className="heading-three heading-three--lighter">

@@ -8,6 +8,11 @@
     row-gap: 2rem;
   }
 
+  &__image {
+    min-height: 40rem;
+    width: 100%;
+  }
+
   &__about {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
