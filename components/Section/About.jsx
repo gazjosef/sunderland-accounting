@@ -66,7 +66,6 @@ export default function About() {
                     alt={member.name}
                     objectFit="contain"
                     layout="fill"
-                    loading="lazy"
                   />
                 </div>
                 <div className="article-about__desc">
