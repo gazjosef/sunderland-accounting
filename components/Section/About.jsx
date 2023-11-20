@@ -1,7 +1,7 @@
 import useGsapFadeIn from "hooks/useGsapFadeIn";
 import Image from "next/image";
 
-export default function About() {
+const About = () => {
   const [aboutTitleRef, aboutTextRef, aboutGalleryRef] = useGsapFadeIn();
 
   const team = [
@@ -81,4 +81,6 @@ export default function About() {
       </div>
     </section>
   );
-}
+};
+
+export default About;
