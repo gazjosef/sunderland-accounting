@@ -57,24 +57,22 @@ const About = () => {
 
       <div className="container">
         <section className="article-about__gallery" ref={aboutGalleryRef}>
-          {team.map((member, index) => {
+          {team.map((member) => {
             return (
-              <section className="article-about__team | u-relative" key={index}>
-                <div className="section-about__img">
-                  <Image
-                    src={member.image_src}
-                    alt={member.name}
-                    objectFit="contain"
-                    layout="fill"
-                  />
-                </div>
+              <>
+                <Image
+                  src={member.image_src}
+                  alt={member.name}
+                  objectFit="contain"
+                  layout="fill"
+                />
                 <div className="article-about__desc">
                   <h3 className="heading-three">{member.position}</h3>
                   <h3 className="heading-three heading-three--lighter">
                     {member.name}
                   </h3>
                 </div>
-              </section>
+              </>
             );
           })}
         </section>
@@ -84,3 +82,25 @@ const About = () => {
 };
 
 export default About;
+
+{
+  /* <section
+className="article-about__team | u-relative u-flex"
+key={member.name}
+>
+<div className="article-about__image">
+  <Image
+    src={member.image_src}
+    alt={member.name}
+    objectFit="contain"
+    layout="fill"
+  />
+</div>
+<div className="article-about__desc">
+  <h3 className="heading-three">{member.position}</h3>
+  <h3 className="heading-three heading-three--lighter">
+    {member.name}
+  </h3>
+</div>
+</section> */
+}
