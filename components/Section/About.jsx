@@ -59,7 +59,7 @@ const About = () => {
         <section className="article-about__gallery" ref={aboutGalleryRef}>
           {team.map((member) => {
             return (
-              <>
+              <div key={member.name}>
                 <Image
                   src={member.image_src}
                   alt={member.name}
@@ -72,7 +72,7 @@ const About = () => {
                     {member.name}
                   </h3>
                 </div>
-              </>
+              </div>
             );
           })}
         </section>
