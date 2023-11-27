@@ -59,13 +59,16 @@ const About = () => {
         <section className="article-about__gallery" ref={aboutGalleryRef}>
           {team.map((member) => {
             return (
-              <div key={member.name}>
-                <Image
-                  src={member.image_src}
-                  alt={member.name}
-                  objectFit="contain"
-                  layout="fill"
-                />
+              <div className="article-about__team" key={member.name}>
+                <div className="article-about__team">
+                  <Image
+                    src={member.image_src}
+                    alt={member.name}
+                    layout="responsive"
+                    height={20}
+                    width={15}
+                  />
+                </div>
                 <div className="article-about__desc">
                   <h3 className="heading-three">{member.position}</h3>
                   <h3 className="heading-three heading-three--lighter">

@@ -10,11 +10,11 @@ export default function Hero() {
       <section id="home" className="article-home u-relative">
         <Header />
         <div className="container">
-          <h1 className="heading-one" ref={heroTitleRef}>
+          <h1 className="heading-one | u-text-shadow-xsm" ref={heroTitleRef}>
             SMARTER WAY TO FILE TAX RETURN{" "}
             <span>IN PERSON. BY PHONE. ONLINE</span>
           </h1>
-          <p className="paragraph" ref={heroTextRef}>
+          <p className="paragraph | u-text-shadow-xsm" ref={heroTextRef}>
             We help lodging tax return Sydney from anywhere. Get your biggest
             tax refund with no tax knowledge needed.
           </p>
