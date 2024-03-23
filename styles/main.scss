@@ -8,27 +8,28 @@
 @import "base/screen-reader";
 @import "base/typography";
 
-@import "components/btn";
-@import "components/form";
-@import "components/icons";
-@import "components/map";
-
 @import "layout/elements";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/topbar";
 
-@import "pages/pages";
-@import "pages/home";
-@import "pages/services";
-@import "pages/about";
-@import "pages/contact";
+@import "sections/hero";
+@import "sections/services";
+@import "sections/about";
+@import "sections/gallery";
+@import "sections/contact";
 
-@import "utils/box";
+@import "snippets/btn";
+@import "snippets/form";
+@import "snippets/icons";
+@import "snippets/map";
+@import "snippets/team";
+
+@import "utils/display";
 @import "utils/flex";
 @import "utils/grid";
 @import "utils/layouts";
 @import "utils/margin";
-@import "utils/transforms";
+@import "utils/position";
 @import "utils/typography";
