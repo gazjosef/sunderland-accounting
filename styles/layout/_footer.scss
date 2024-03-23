@@ -1,6 +1,8 @@
 .footer {
-  background-color: black;
-  padding: 4rem 0;
+  --padding-top-bttom: 4rem;
+  --padding-left-right: 0;
+  background-color: var(--clr-black-1000);
+  padding: var(--padding-top-bttom) var(--padding-left-right);
 
   color: var(--clr-white-0);
   text-align: center;
@@ -13,6 +15,7 @@
       justify-content: center;
       gap: 2rem;
     }
+    font-weight: 300;
   }
 
   &__icons {

@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           Sunderland Accounting
         </h2>
 
-        <section className="footer__links | u-margin-bottom-small ">
+        <section className="footer__links | u-margin-bottom-medium ">
           <ul role="list">
             <li>Home</li>
             <li>Our Services</li>
@@ -26,12 +26,12 @@ const Footer: React.FC = () => {
           </ul>
         </section>
 
-        <section className="footer__icons | u-margin-bottom-small">
+        <section className="footer__icons | u-margin-bottom-medium">
           <IconContext.Provider value={{}}>
-            <FaFacebook size={28} />
-            <FaGooglePlus size={28} />
-            <FaInstagram size={28} />
-            <FaLinkedin size={28} />
+            <FaFacebook size={40} />
+            <FaGooglePlus size={40} />
+            <FaInstagram size={40} />
+            <FaLinkedin size={40} />
           </IconContext.Provider>
         </section>
 
