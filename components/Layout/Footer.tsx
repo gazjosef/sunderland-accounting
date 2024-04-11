@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <h2 className="heading-two | u-margin-bottom-medium">
+        <h2 className="heading-two | u-margin-bottom-small">
           Sunderland Accounting
         </h2>
 
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </IconContext.Provider>
         </section>
 
-        <section className="footer__links | u-margin-bottom-medium">
+        <section className="footer__links | u-margin-bottom-small">
           <ul role="list">
             <li>Contact Us</li>
             <li>Terms</li>

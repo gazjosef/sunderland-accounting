@@ -17,3 +17,48 @@
     color: var(--clr-white-0);
   }
 }
+
+// .blurred-img {
+//   background-image: url("/public/images/bg/city-bg-20w.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   filter: blur(10px);
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     opacity: 0;
+//     animation: pulse 2.5s infinite;
+//     background-color: white;
+//   }
+
+//   @keyframes pulse {
+//     0% {
+//       opacity: 0;
+//     }
+//     50% {
+//       opacity: 0.1;
+//     }
+//     100% {
+//       opacity: 0;
+//     }
+//   }
+
+//   &.loaded::before {
+//     animation: none;
+//     content: none;
+//   }
+
+//   & > * {
+//     opacity: 0;
+//     transition: opacity 250ms ease-in-out;
+//   }
+
+//   &.loaded {
+//     & > * {
+//       opacity: 1;
+//     }
+//   }
+// }
