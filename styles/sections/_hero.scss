@@ -1,13 +1,32 @@
 .article-home {
+  min-height: calc(100vh - 4rem);
   background-image: linear-gradient(
       to bottom,
-      rgba(black, 0.52),
-      rgba(black, 0.73)
+      rgba(0, 0, 0, 0.52),
+      rgba(0, 0, 0, 0.73)
     ),
-    url("/img/city.jpg");
+    url("https://raw.githubusercontent.com/gazjosef/sunderland-accounting/main/public/images/bg/city-bg-1600w.jpg");
   background-repeat: no-repeat, repeat;
   background-size: cover;
-  min-height: calc(100vh - 4rem);
+
+  /* Media queries for different screen widths */
+  @media (max-width: 800px) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.52),
+        rgba(0, 0, 0, 0.73)
+      ),
+      url("https://raw.githubusercontent.com/gazjosef/sunderland-accounting/main/public/images/bg/city-bg-800w.jpg");
+  }
+
+  @media (max-width: 400px) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.52),
+        rgba(0, 0, 0, 0.73)
+      ),
+      url("https://raw.githubusercontent.com/gazjosef/sunderland-accounting/main/public/images/bg/city-bg-400w.jpg");
+  }
 
   display: grid;
   place-content: center;
@@ -17,48 +36,3 @@
     color: var(--clr-white-0);
   }
 }
-
-// .blurred-img {
-//   background-image: url("/public/images/bg/city-bg-20w.png");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-//   filter: blur(10px);
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     inset: 0;
-//     opacity: 0;
-//     animation: pulse 2.5s infinite;
-//     background-color: white;
-//   }
-
-//   @keyframes pulse {
-//     0% {
-//       opacity: 0;
-//     }
-//     50% {
-//       opacity: 0.1;
-//     }
-//     100% {
-//       opacity: 0;
-//     }
-//   }
-
-//   &.loaded::before {
-//     animation: none;
-//     content: none;
-//   }
-
-//   & > * {
-//     opacity: 0;
-//     transition: opacity 250ms ease-in-out;
-//   }
-
-//   &.loaded {
-//     & > * {
-//       opacity: 1;
-//     }
-//   }
-// }

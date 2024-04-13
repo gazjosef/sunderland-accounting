@@ -1,6 +1,5 @@
 import React from "react";
 // ** Import Icons
-import { IconContext } from "react-icons";
 import {
   FaAngleUp,
   FaPencilAlt,
@@ -13,6 +12,8 @@ import useGsapFadeIn from "../../hooks/useGsapFadeIn";
 const Services: React.FC = () => {
   const [servicesIntroRef, servicesTaxesRef, servicesBookkeepingRef] =
     useGsapFadeIn();
+
+  const iconColor = "#145da0";
 
   return (
     <article id="services" className="section">
@@ -34,14 +35,7 @@ const Services: React.FC = () => {
         </section>
 
         <section className="article-services__taxes" ref={servicesTaxesRef}>
-          <IconContext.Provider
-            value={{
-              className:
-                "article-services__icons article-services__icons--caret",
-            }}
-          >
-            <FaAngleUp size={60} />
-          </IconContext.Provider>
+          <FaAngleUp color={iconColor} size={60} />
           <div className="article-services__text">
             <h3 className="heading-three">TAX ACCOUNTING & PREPARATION</h3>
             <p className="paragraph">
@@ -56,11 +50,7 @@ const Services: React.FC = () => {
           className="article-services__finances"
           ref={servicesBookkeepingRef}
         >
-          <IconContext.Provider
-            value={{ className: "article-services__icons" }}
-          >
-            <FaPencilAlt size={48} />
-          </IconContext.Provider>
+          <FaPencilAlt color={iconColor} size={48} />
           <div className="article-services__text">
             <h3 className="heading-three">FINANCIAL REPORTING</h3>
             <p className="paragraph">
@@ -71,11 +61,7 @@ const Services: React.FC = () => {
         </section>
 
         <section className="article-services__bookkeeping">
-          <IconContext.Provider
-            value={{ className: "article-services__icons" }}
-          >
-            <FaBriefcase size={48} />
-          </IconContext.Provider>
+          <FaBriefcase color={iconColor} size={48} />
           <div className="article-services__text">
             <h3 className="heading-three">BOOKKEEPING SERVICES</h3>
             <p className="paragraph">
@@ -87,11 +73,7 @@ const Services: React.FC = () => {
         </section>
 
         <section className="article-services__payroll">
-          <IconContext.Provider
-            value={{ className: "article-services__icons" }}
-          >
-            <FaPaperclip size={48} />
-          </IconContext.Provider>
+          <FaPaperclip color={iconColor} size={48} />
           <div className="article-services__text">
             <h3 className="heading-three">PAYROLL SERVICES</h3>
             <p className="paragraph">
