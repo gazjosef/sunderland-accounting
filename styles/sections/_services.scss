@@ -19,26 +19,13 @@
     justify-content: space-between;
 
     &:not(:first-child) {
-      border: 1px solid $color-black;
+      border: 1px solid rgba(0, 0, 0, 0.2);
     }
   }
 
   &__icons {
     margin: 2rem 2rem 0;
     color: $color-blue-300;
-    // font-size: 6rem;
-
-    // @include respond(tab-land) {
-    //   font-size: 5rem;
-    // }
-
-    // &--caret {
-    //   font-size: 7.5rem;
-
-    //   @include respond(tab-land) {
-    //     font-size: 6rem;
-    //   }
-    // }
   }
 
   &__text {
