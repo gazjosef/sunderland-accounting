@@ -28,13 +28,15 @@ const Footer: React.FC = () => {
           </section> */}
         </div>
 
-        <div>
+        <div className="u-flex u-items-center u-justify-end u-gap-8">
           <section className="footer__links | u-margin-bottom-small">
             <ul role="list">
               <li>Home</li>
               <li>Our Services</li>
               <li>About Us</li>
             </ul>
+          </section>
+          <section className="footer__links | u-margin-bottom-small">
             <ul role="list">
               <li>Contact Us</li>
               <li>Terms</li>
@@ -43,7 +45,7 @@ const Footer: React.FC = () => {
           </section>
         </div>
       </div>
-      <section className="u-center-text">
+      <section className="footer__copyright | u-center-text">
         Gareth Hind &copy; {currentYear}
       </section>
     </footer>
