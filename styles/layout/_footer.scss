@@ -8,11 +8,20 @@
   text-align: center;
   text-transform: uppercase;
 
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > * {
+      width: 50rem;
+    }
+  }
+
   &__links {
     ul {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       gap: 2rem;
     }
     font-weight: 300;
@@ -21,7 +30,7 @@
   &__icons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
   }
 }
