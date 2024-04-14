@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <section className="footer__copyright | u-center-text">
-        Gareth Hind &copy; {currentYear}
+        Copyright <span>&copy;</span> Gareth Hind {currentYear}
       </section>
     </footer>
   );

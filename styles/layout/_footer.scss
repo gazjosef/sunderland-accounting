@@ -6,7 +6,6 @@
 
   color: var(--clr-white-0);
   text-align: center;
-  text-transform: uppercase;
 
   .container {
     display: grid;
@@ -20,6 +19,7 @@
   &__links {
     font-weight: 300;
     font-size: 1.5rem;
+    text-transform: uppercase;
 
     ul {
       display: flex;
@@ -38,5 +38,9 @@
 
   &__copyright {
     margin-top: 4rem;
+
+    span {
+      color: #ffb199;
+    }
   }
 }
