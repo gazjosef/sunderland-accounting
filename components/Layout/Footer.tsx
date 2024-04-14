@@ -18,14 +18,14 @@ const Footer: React.FC = () => {
           <h2 className="heading-two | u-margin-bottom-small">
             Sunderland Accounting
           </h2>
-          {/* <section className="footer__icons | u-margin-bottom-medium">
+          <section className="footer__icons | u-margin-bottom-medium">
             <IconContext.Provider value={{}}>
               <FaFacebook size={40} />
               <FaGooglePlus size={40} />
               <FaInstagram size={40} />
               <FaLinkedin size={40} />
             </IconContext.Provider>
-          </section> */}
+          </section>
         </div>
 
         <div className="u-flex u-items-center u-justify-end u-gap-8">

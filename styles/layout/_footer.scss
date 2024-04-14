@@ -18,22 +18,21 @@
   }
 
   &__links {
+    font-weight: 300;
+    font-size: 1.5rem;
+
     ul {
       display: flex;
       flex-direction: column;
       text-align: left;
-      // align-items: ;
-      // justify-content: flex-end;
       gap: 0.5rem;
     }
-    font-weight: 300;
-    font-size: 1.5rem;
   }
 
   &__icons {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 2rem;
   }
 
