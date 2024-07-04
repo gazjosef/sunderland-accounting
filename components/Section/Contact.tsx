@@ -2,7 +2,7 @@ import React from "react";
 import { FaPhone } from "react-icons/fa";
 import useGsapFadeIn from "../../hooks/useGsapFadeIn";
 import Form from "../../components/Snippets/Form/Form";
-import Map from "../../components/Snippets/Map/Map";
+import Map from "../Snippets/Map";
 
 const Contact = () => {
   const [contactTitleRef, contactMapRef, contactDetailsRef] = useGsapFadeIn();
