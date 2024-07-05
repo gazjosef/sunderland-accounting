@@ -5,7 +5,7 @@ import FooterCopyright from "../Snippets/FooterCopyright.tsx";
 const links1 = ["Home", "Our Services", "About Us"];
 const links2 = ["Contact Us", "Terms", "Privacy Policy"];
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">
@@ -24,6 +24,4 @@ const Footer: React.FC = () => {
       <FooterCopyright />
     </footer>
   );
-};
-
-export default Footer;
+}
