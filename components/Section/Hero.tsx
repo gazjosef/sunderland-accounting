@@ -2,11 +2,13 @@ import React from "react";
 
 import Link from "next/link";
 import Header from "../Layout/Header";
+import Navbar from "../Layout/Navbar";
 
 const Hero: React.FC = () => {
   return (
     <article id="home" className="article-home">
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
       <div className="container">
         <h1 className="heading-hero">
           SMARTER WAY TO FILE TAX RETURN{" "}

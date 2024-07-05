@@ -1,13 +1,12 @@
 import React from "react";
-// ** Import Icons
 import {
   FaAngleUp,
   FaPencilAlt,
   FaBriefcase,
   FaPaperclip,
 } from "react-icons/fa";
-// ** Import Hooks
 import useGsapFadeIn from "../../hooks/useGsapFadeIn";
+import Box from "../Snippets/Box";
 
 const Services: React.FC = () => {
   const [servicesIntroRef, servicesTaxesRef, servicesBookkeepingRef] =
@@ -34,56 +33,40 @@ const Services: React.FC = () => {
           </p>
         </section>
 
-        <section className="article-services__taxes" ref={servicesTaxesRef}>
-          <FaAngleUp color={iconColor} size={60} />
-          <div className="article-services__text">
-            <h3 className="heading-three">TAX ACCOUNTING & PREPARATION</h3>
-            <p className="paragraph">
-              Our team of certified tax professionals have a deep understanding
-              of the tax code and are equipped to handle all of your tax-related
-              needs.
-            </p>
-          </div>
-        </section>
+        <Box
+          title={"TAX ACCOUNTING & PREPARATION"}
+          description={
+            "Our team of certified tax professionals have a deep understanding of the tax code and are equipped to handle all of your tax-related needs."
+          }
+          // ref={servicesBookkeepingRef}
+        >
+          <FaAngleUp color={iconColor} size={48} />
+        </Box>
 
-        <section
-          className="article-services__finances"
-          ref={servicesBookkeepingRef}
+        <Box
+          title={"FINANCIAL REPORTING"}
+          description={
+            "Our Financial Reporting Services go beyond numbers, providing comprehensive insights into your business financial health."
+          }
         >
           <FaPencilAlt color={iconColor} size={48} />
-          <div className="article-services__text">
-            <h3 className="heading-three">FINANCIAL REPORTING</h3>
-            <p className="paragraph">
-              Our Financial Reporting Services go beyond numbers, providing
-              comprehensive insights into your business&apos; financial health.
-            </p>
-          </div>
-        </section>
+        </Box>
 
-        <section className="article-services__bookkeeping">
+        <Box
+          title={"BOOKKEEPING SERVICES"}
+          description={
+            "We provide a range of bookkeeping services, including ledger maintenance, invoicing, and expense tracking, allowing you to tailor our services to fit your business model seamlessly."
+          }
+        >
           <FaBriefcase color={iconColor} size={48} />
-          <div className="article-services__text">
-            <h3 className="heading-three">BOOKKEEPING SERVICES</h3>
-            <p className="paragraph">
-              We provide a range of bookkeeping services, including ledger
-              maintenance, invoicing, and expense tracking, allowing you to
-              tailor our services to fit your business model seamlessly.
-            </p>
-          </div>
-        </section>
+        </Box>
 
-        <section className="article-services__payroll">
+        <Box
+          title={"PAYROLL SERVICES"}
+          description={`We take care of the entire payroll cycle, from data entry to taxfiling. Whether you are a small business owner or part of a larger organization, our services scale to meet your payroll needs.`}
+        >
           <FaPaperclip color={iconColor} size={48} />
-          <div className="article-services__text">
-            <h3 className="heading-three">PAYROLL SERVICES</h3>
-            <p className="paragraph">
-              We take care of the entire payroll cycle, from data entry to tax
-              filing. Whether you&apos;re a small business owner or part of a
-              larger organization, our services scale to meet your payroll
-              needs.
-            </p>
-          </div>
-        </section>
+        </Box>
       </div>
     </article>
   );

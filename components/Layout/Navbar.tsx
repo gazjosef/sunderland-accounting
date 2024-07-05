@@ -35,6 +35,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar | u-flex u-items-center | u-fs-nav">
+      <div>Logo</div>
       {/* UNORDERED LIST */}
       <ul
         id="primary-navigation"
@@ -59,7 +60,7 @@ const Navbar: React.FC = () => {
       </ul>
 
       {/* TOGGLE BUTTON */}
-      <div
+      {/* <div
         className="navbar__mobile-nav-toggle sr-only"
         aria-label="Toggle navigation"
         aria-expanded={toggle}
@@ -71,9 +72,44 @@ const Navbar: React.FC = () => {
             <FaBars onClick={handleClick} />
           )}
         </IconContext.Provider>
-      </div>
+      </div> */}
+      <NavbarMobileNavToggle />
     </nav>
   );
 };
 
 export default Navbar;
+
+function NavbarList() {
+  return <div></div>;
+}
+
+function NavbarListLink() {
+  return <div></div>;
+}
+
+function NavbarMobileNavToggle() {
+  // const [toggle, setToggle] = useState<boolean>(false);
+
+  // const handleClick = () => {
+  //   setToggle((t) => !t);
+  // };
+
+  return (
+    <div
+      className="navbar__mobile-nav-toggle sr-only"
+      aria-label="Toggle navigation"
+      // aria-expanded={toggle}
+    >
+      <h1>Hello World</h1>
+
+      {/* <IconContext.Provider value={{}}>
+        {toggle ? (
+          <FaTimes onClick={handleClick} />
+        ) : (
+          <FaBars onClick={handleClick} />
+        )}
+      </IconContext.Provider> */}
+    </div>
+  );
+}

@@ -3,11 +3,11 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
 
-  @include respond(tab-port) {
+  @include respond(lg) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include respond(phone) {
+  @include respond(md) {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -41,71 +41,11 @@
 
     text-align: right;
 
-    @include respond(tab-port) {
+    @include respond(lg) {
       grid-column: 1 / -1;
       grid-row: 1 / span 1;
 
       text-align: left;
-    }
-  }
-
-  &__taxes {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-
-    @include respond(tab-port) {
-      grid-column: 1 / span 1;
-      grid-row: 2 / span 1;
-    }
-
-    @include respond(phone) {
-      grid-column: 1 / span 1;
-      grid-row: 2 / span 1;
-    }
-  }
-
-  &__finances {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
-
-    @include respond(tab-port) {
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 1;
-    }
-
-    @include respond(phone) {
-      grid-column: 1 / span 1;
-      grid-row: 3 / span 1;
-    }
-  }
-
-  &__bookkeeping {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-
-    @include respond(tab-port) {
-      grid-column: 1 / span 1;
-      grid-row: 3 / span 1;
-    }
-
-    @include respond(phone) {
-      grid-column: 1 / span 1;
-      grid-row: 4 / span 1;
-    }
-  }
-
-  &__payroll {
-    grid-column: 3 / span 1;
-    grid-row: 2 / span;
-
-    @include respond(tab-port) {
-      grid-column: 2 / span 1;
-      grid-row: 3 / span 1;
-    }
-
-    @include respond(phone) {
-      grid-column: 1 / span 1;
-      grid-row: 5 / span 1;
     }
   }
 }
